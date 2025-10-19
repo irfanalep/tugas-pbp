@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="images/potodua.webp" alt="MC">
+    <img src="../images/potodua.webp" alt="MC">
 </body>
 </html>

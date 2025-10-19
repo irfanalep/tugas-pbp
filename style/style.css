@@ -1,0 +1,148 @@
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 12px;
+}
+
+/* pengaturan halaman */
+#container {
+  width: 1000px;
+  font-size: 90%;
+  margin: 0 auto;
+}
+
+/* pengaturan header */
+#header {
+  padding: 10px;
+  background-image: url(../images/uinjkt.gif), url(../images/nama.gif);
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #99ccff;
+  height: 75px;
+  border: #0000ff dashed 1px;
+
+  /* --- Tambahan untuk centering --- */
+  display: flex;
+  justify-content: center; /* Center horizontal */
+  align-items: center; /* Center vertikal */
+}
+
+#header h1 {
+  color: #003399;
+  font-family: "trebuchet ms", helvetica, arial, sans-serif;
+  /* Hapus width, height, dan padding yang tidak perlu */
+  margin: 0; /* Hapus margin default dari h1 */
+}
+
+/* pengaturan side panel */
+#sidebar {
+  border: #0000ff dashed 1px;
+  margin-top: 10px;
+  width: 145px;
+  float: left;
+  background-color: #99ccff;
+}
+
+#sidebar h3 {
+  color: #993300;
+  padding-left: 10px;
+  font-family: "trebuchet ms", helvetica, arial, sans-serif;
+}
+
+/* pengaturan menu navigasi */
+ul#navmenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul#navmenu li {
+  margin-bottom: 5px;
+}
+ul#navmenu a {
+  display: block;
+  width: auto;
+  height: auto;
+
+  background-color: #003366;
+  padding: 5px 5px 3px;
+  text-align: left;
+  text-decoration: none;
+  color: #eecc11;
+  cursor: pointer;
+}
+
+ul#navmenu a:hover,
+ul#navmenu a:focus,
+ul#navmenu a:active {
+  background-color: #333;
+  color: #fff;
+}
+
+ul#navmenu a.selected,
+ul#navmenu a.selected:hover,
+ul#navmenu a.selected:focus,
+ul#navmenu a.selected:active {
+  background-color: #386088;
+  color: #fff;
+}
+
+ul#navmenu a.selected {
+  text-align: right;
+  cursor: default;
+}
+
+/* pengaturan content */
+#page {
+  border: #0000ff dashed 1px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  width: 810px;
+  float: right;
+}
+#page h2 {
+  color: #993300;
+  font-family: "trebuchet ms", helvetica, arial, sans-serif;
+}
+img {
+  border: none;
+}
+
+#clear {
+  clear: both;
+}
+
+#footer {
+  border: #0000ff dashed 1px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #99ccff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+thead th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody tr:hover {
+  background-color: #e2e2e2;
+}
+td.day-cell {
+  font-weight: bold;
+  vertical-align: middle;
+  background-color: #f9f9f9;
+}
